@@ -1,0 +1,236 @@
+#PreRegistation{
+    background-color: rgba(219, 255, 225, 0.3);
+    min-height: 100vh;
+    max-height: 100%;
+    width: 100%;
+}
+
+#FormMainHeading{
+    text-align: center;
+    padding: 20px 0;
+    letter-spacing: 3px;
+    text-shadow: 0 1px rgb(1, 138, 1, .8);
+}
+#FormSubHeading{
+    text-align: center;
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+#PreRegistation form{
+    width: 80%;
+    margin: 30px auto;
+}
+#PreRegistation form label{
+    width: 20%;
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+#PreRegistation form input{
+    width: 70%;
+    padding: 3px 10px;
+}
+#PreRegistation form #RegCheckStream{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+}
+#PreRegistation form .options{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+#PreRegistation form .options label{
+    height: 100%;
+    width: 100%;
+
+}
+#PreRegistation form .options input{
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#Pinfo, #RegDOB{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#RegPH, #DOBA ,#RegEmail, #DOBB{
+    width: 50%;
+}
+#PreRegistation form #RegPH label, #PreRegistation form #DOBA label{
+    width: 40%;
+}
+#PreRegistation form #RegPH input, #PreRegistation form #DOBA input{
+    width: 50%;
+}
+#PreRegistation form #RegEmail input, #PreRegistation form #DOBB input{
+    width: 60%;
+}
+
+#phNumber::-webkit-outer-spin-button,
+#phNumber::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#RegSubBtn{
+    display: inline-block;
+    margin: 20px 50px;
+}
+#RegSubBtn button{
+    padding: 10px 15px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 green;
+    transition: .5s;
+}
+#RegSubBtn button:hover{
+    background-color: rgb(6, 163, 6, .8);
+    color: white;
+}
+#PreRegistation form .error{
+    color: red;
+    margin-left: 25%;
+    margin-top: 5px;
+}
+#PreRegistation form #phnumberError{
+    margin-left: 50%;
+}
+#PreRegistation form #emailError{
+    margin-left: 30%;
+}
+
+/* to make better register check stream  */
+#RegCheckStream .optionsStream{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    gap: 3%;
+}
+
+
+/* for responsiveness  */
+@media screen and (max-width: 1250px) {
+    #PreRegistation form {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1050px) {
+    #Pinfo #RegPH{
+        display: flex;
+        width: 50%;
+        float: right;
+        position: relative;
+    }
+    #PreRegistation form #RegPH input{
+        width: 48.7%;
+        position: absolute;
+        right: 0 ;
+    }
+    #PreRegistation form #RegPH input, #PreRegistation form #DOBA input {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    #FormMainHeading {
+        font-size: 20px;
+    }
+    #FormSubHeading {
+        font-size: 19px;
+    }
+    #PreRegistation form #RegCheckStream {
+        width: 100%;
+    }
+    #RegCheckStream .optionsStream {
+        display: inline-block;
+        margin-left: 20%;
+    }
+    #PreRegistation form #RegCheckStream {
+        display: unset;
+    }
+    #PreRegistation form .options label {
+        letter-spacing: 3px;
+    }
+    #PreRegistation form input {
+        margin: auto;
+        display: block;
+    }
+    form #registerInputfield label{
+        width: 90%;
+    }
+    #Pinfo, #RegDOB {
+        flex-direction: column;
+    }
+    #RegPH, #DOBA, #RegEmail, #DOBB {
+        flex-direction: column;
+    }
+    #PreRegistation form #RegPH label, #PreRegistation form #DOBA label {
+        width: 100%;
+        margin-left: -7%;
+    }
+    #PreRegistation form #RegPH input, #PreRegistation form #DOBA input {
+        width: 100%;
+    }
+    #PreRegistation form #RegEmail input, #PreRegistation form #DOBB input {
+        width: 100%;
+    }
+    #RegPH, #DOBA, #RegEmail, #DOBB {
+        width: 70%;
+    }
+    #registerInputfield #DOBB label, #registerInputfield #Pinfo #RegEmail label{
+        margin-left: -7%;
+    }
+    #Pinfo  #RegPH{
+        display: flex;
+    }
+    #PreRegistation form #RegPH input {
+        width: 100%;
+        position:unset;
+    }
+    #Pinfo #RegPH {
+        width: 70%;
+    }
+    #RegDOB {
+        gap: 10px;
+    }
+    #PreRegistation form label {
+        margin-left: 10%;
+    }
+    #PreRegistation form .options label {
+        letter-spacing: 3px;
+    }
+    #PreRegistation form input {
+        margin: auto;
+        display: block;
+    }
+    #RegPH, #DOBA, #RegEmail, #DOBB, #Pinfo, #RegDOB {
+        flex-direction: column;
+    }
+    #RegSubBtn button{
+        margin-left: 30%;
+        margin-bottom: 10px;
+        padding: 6px 11px;
+        font-size: 12px;
+    }
+    #PreRegistation form .error{
+        color: red;
+        margin-left: 30px;
+        margin-top: 5px;
+        font-size: 14px;
+    }
+    #PreRegistation form #phnumberError{
+        margin-left: 10px;
+    }
+    #PreRegistation form #emailError{
+        margin-left: 10px;
+    }
+}
